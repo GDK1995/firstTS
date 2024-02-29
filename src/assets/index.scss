@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    background-color: #FFF0F5;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+#block {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+
+    &_text,
+    &_input {
+        display: flex;
+        
+        p {
+            width: 150px;
+            color: rgb(78, 78, 78);
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        textarea,
+        input {
+            border-radius: 8px;
+            border: 1px solid rgb(187, 182, 182);
+            margin-top: 8px;
+            padding: 8px;
+            width: 100%;
+            cursor: text;
+        }
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+        border-radius: 8px;
+        background-color: rgb(173, 111, 111);
+        color: #FFF0F5;
+        border: none;
+        padding: 8px 10px;
+        font-weight: 600;
+        margin-top: 8px;
+
+        &:hover {
+            background-color: rgb(126, 74, 74);
+        }
+    }
+}
+
+#modal-template {
+    position: relative;
+    width: 100%;
+}
+
+#modal {
+    position: fixed;
+    z-index: 2;
+    border-radius: 16px;
+    border: none;
+    background-color: rgb(253, 251, 251);
+    min-height: 150px;
+    width: 50%;
+    margin: 100px 25%;
+}
+
+.header,
+.txt {
+    background-color: rgb(253, 251, 251);
+}
